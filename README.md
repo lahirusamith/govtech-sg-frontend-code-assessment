@@ -2,7 +2,7 @@
 
 ## prerequisites 
 
--You need to have the node package manager available/installed in your machine.
+* You need to have the node package manager available/installed in your machine.
     please go to the https://nodejs.org/en/ and install nodejs into your machine if npm is not available.
 
 
@@ -26,6 +26,6 @@ the url : 'http://localhost:3000/'
 Code Assessment link for the project: https://github.com/Milleus/frontend-developer-interview-1
 
 
--Assessment Done by: Lahiru Samith Malepathirana
--Contact email: lahirusmp@gmail.com
--Contact Number: +65 85256509
+- Assessment Done by: Lahiru Samith Malepathirana
+- Contact email: lahirusmp@gmail.com
+- Contact Number: +65 85256509
