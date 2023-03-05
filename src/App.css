@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+.app {
+  font-family: 'Epilogue';
+  font-size: 18px;
+  color: hsl(0, 0%, 4%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.site-header {
+  color: hsl(0, 0%, 41%);
+  height: 64;
+  padding-inline: 50;
+  line-height: 64px;
+  background-color: hsl(0, 0%, 98%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-content {
+  background-color: hsl(0, 0%, 98%);
+  border-color:  hsl(0, 0%, 98%);
+  border-bottom-color:  hsl(0, 0%, 98%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.site-footer {
+  background-color: hsl(0, 0%, 98%);
+  border-color:  hsl(0, 0%, 98%);
+  border-bottom-color:  hsl(0, 0%, 98%);
+}
+
+
+.site-header-menu {
+  background-color: hsl(0, 0%, 98%);
+  border-color:  hsl(0, 0%, 98%);
+  border-bottom-color:  hsl(0, 0%, 98%);
+}
+
+.site-user-menu {
+  float: right;
+  min-width: 90%;
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 18px 24px 16px 0;
+  background-repeat: no-repeat;
+  background-image: url(/public/images/logo.svg);
+}
+
+.ant-menu-submenu-title:hover {
+  font-weight: 600;
+}
+
+.ant-menu-item-active:hover {
+  border-bottom-color:  hsl(0, 0%, 98%);
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+  transition: none !important;
+}
+
+.register-btn {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.register-btn.ant-btn:hover {
+  color: black;
+  font-weight: 600;
+  border-color: black;
+}
+
+.login-btn.ant-btn {
+  color: black;
+}
+
+.login-btn.ant-btn:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.page-margin {
+  margin: 10px 200px 10px 200px;
+}
+
+.section-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.description {
+  justify-content: start;
+}
+
+.inquiry-btn-wrapper {
+  justify-content: start;
+}
+
+.h1 {
+  font-size:5vw;
+  line-height: 100%;
+  font-weight:700;
+  text-align: start;
+  margin: 20px 0 10px 0;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin: 18px 0 16px 0;
+  text-align: start;
+  color: hsl(0, 0%, 41%);
+}
+
+.inquiry-btn {
+  height: 45px;
+  width: 120px;
+  margin: 30px 0 60px 0;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inquiry-btn.ant-btn:hover {
+  font-weight: 500;
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+  border-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.client-logo {
+  margin: 10px 5px 0 0;
+  width: 6vw;
+}
+
+.client-list {
+  margin-left: 0;
+}
+
+.main-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-inline-size: 100%;
+}
+
+@media only screen and  (max-width: 480px) {
+  .h1 {
+    font-size: 9vw;
+    margin: 30px 0 10px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .page-margin {
+    margin: 5px 10px 5px 10px;
+  }
+
+  .client-logo {
+    width: 15vw;
+  }
+
+  .paragraph {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .inquiry-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inquiry-btn-wrapper {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  .h1 {
+    font-size: 9vw;
+    text-align: center;
+  }
+
+  .page-margin {
+    margin: 5px 10px 5px 10px;
+  }
+
+  .client-logo {
+    width: 13vw;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  .inquiry-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inquiry-btn-wrapper {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .page-margin {
+    margin: 5px 50px 5px 50px;
+  }
+
+  .h1 {
+    font-size: 5vw;
+  }
+
+  .paragraph {
+    font-size: 2vw;
+  }
+
+  .inquiry-btn {
+    margin: 10px 0 10px 0;
+    height: 35px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .page-margin {
+    margin: 5px 100px 5px 100px;
+  }
+
+  .inquiry-btn {
+    margin: 20px 0 45px 0;
+    height: 35px;
+    width: auto;
+  }
+  
+  .h1 {
+    font-size: 5vw;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 1440px)  {
+  .page-margin {
+    margin: 10px 250px 10px 250px;
   }
 }
